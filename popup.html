@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>PGP Verification</title>
+    <style>
+      body {
+        background-color: #E3E3E3;
+        color: #143945;
+      }
+
+      h1 {
+        margin: 0;
+        padding: 0;
+      }
+
+      .col-md-2 {
+        float: left;
+        width: calc((100% / 12) * 2);
+      }
+
+      .col-md-10 {
+        float: left;
+        width: calc((100% / 12) * 10);
+      }
+
+      button {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="col-md-2">
+      <img src="privacy.png" />
+    </div>
+    <div class="col-md-10">
+      <h1>Mark Wylde
+        <small>&lt;me@markwylde.co.uk&gt;</small>
+      </h1>
+      <p>
+        <strong>Fingerprint:</strong>
+        abcd12 - abcd12 - abcd12 - abcd12
+      </p>
+
+      <p>
+        <table>
+          <thead></thead>
+          <tbody>
+            <tr>
+              <td><img src="tick.png" style="width: 20px;" /></td>
+              <td>Matched the certificate you had in your keychain</td>
+            </tr>
+            <tr>
+              <td><img src="tick.png" style="width: 20px;" /></td>
+              <td>Content was signed correctly and untampered</td>
+            </tr>
+            <tr>
+              <td><img src="tick.png" style="width: 20px;" /></td>
+              <td>Has not changed since the last time you visited</td>
+            </tr>
+            <tr>
+              <td><img src="warning.png" style="width: 20px;" /></td>
+              <td>You can check public keys through namecoin.<br/>
+                <a href="#">Click here</a> to configure your namecoin nodes.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </p>
+    </div>
+    <p>
+      <center><button id="btnClose">Close</button></center>
+    </p>
+  </body>
+
+  <script src="popup.js"></script>
+
+</html>
